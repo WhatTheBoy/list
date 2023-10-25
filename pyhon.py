@@ -1,31 +1,58 @@
-rainbow_colors = {'red', 'orange', 'yellow', 'green', 'blue',
-                  'indigo', 'violet'}
-print(rainbow_colors)
-print(type(rainbow_colors))
-empty_set = set()
+# print(1 < 2)
+# print(type(True))
+# print(type(False))
+
+# # Copmarison operators
+
+# print(1 == 1)
+# print(1 == 2)
+# print('hello' == 'hello')
+# print('hello' == 'hi')
 
 
-number_list = [1, 43, 231]
-# there are repeating elements in this list using 'set' we remove them because in
-# a set all objects are unique and cannot be repeated
-text_tuples = ('abc', 'def', 'gk', 'gk', 'gk')
-number_list = tuple(number_list)
-set_text = (set(number_list+text_tuples))
-print(type(set_text))
-print(set_text)
+# print(1 != 1)
+# print(1 != 2)
+# print('hello' != 'hello')
+# print('Hello' != 'hello')
 
-# Adding
-set_text.add('fgf')
-set_text.add(12.32)
-print(set_text)
+# print(1 < 2)
+# print(1 > 2)
+# print(1 <= 2)
+# print(1 >= 2)
 
-# random deleted
-pop_element = set_text.pop()
-print(pop_element)
-# removing
-removing_element = set_text.remove('abc')
-print(removing_element)
-# discard
-set_text.discard('def')
-set_text.discard(1)
-print(set_text)
+# print(ord('a'))
+# print(ord('b'))
+# print('a' > 'b')
+# print('a' < 'b')
+# print('a' <= 'b')
+# print('a' >= 'b')
+# print('hi' < 'hello')
+# print(ord('h'))
+# print(ord('i'))
+# print(ord('e'))
+
+
+# x = 10
+# y = 20
+# print(x == y)
+# print(x < y)
+# print(x > y)
+# print(x >= y)
+# print(x <= y)
+# print(x != y)
+
+# age = int(input('Input your age:'))
+# print('Access is premitted:' + str(age >= 18))
+
+x = 2
+y = 3
+print(x == y)
+print(x != y)
+print(x <= y)
+print(x >= y)
+print(x < y)
+print(x > y)
+
+
+print('g' < 'n')
+print(ord('g'), ord('n'))
