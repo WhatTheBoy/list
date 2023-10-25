@@ -1,55 +1,31 @@
-first_list = [123, 32]
-secound_list = ['abc', 'melon']
-
-finaly_list = first_list.__add__(secound_list)
-
-
-print(len(finaly_list))
-print(finaly_list[2])
+rainbow_colors = {'red', 'orange', 'yellow', 'green', 'blue',
+                  'indigo', 'violet'}
+print(rainbow_colors)
+print(type(rainbow_colors))
+empty_set = set()
 
 
-new_list = finaly_list[:2]
-finaly_list[0] = '213'
-changed_list = finaly_list + new_list
+number_list = [1, 43, 231]
+# there are repeating elements in this list using 'set' we remove them because in
+# a set all objects are unique and cannot be repeated
+text_tuples = ('abc', 'def', 'gk', 'gk', 'gk')
+number_list = tuple(number_list)
+set_text = (set(number_list+text_tuples))
+print(type(set_text))
+print(set_text)
 
-# Adding items
-changed_list.append('New_object')
-changed_list.insert(0, 'start')
-changed_list.insert(4, 'middle')
-# Removing items
-changed_list.pop(2)
-deleted_item = changed_list.pop()
-removing_items = changed_list.remove('213')
-print(deleted_item)
-print(removing_items)
-# method sort and copy
+# Adding
+set_text.add('fgf')
+set_text.add(12.32)
+print(set_text)
 
-number_list = [1, 3, 2, 54353, -2312, 534345]
-letter_list = ['v', 'd', 'g', 'ds']
-sort_number_list = number_list.copy()
-sort_letter_list = letter_list.copy()
-
-sort_number_list.sort()
-sort_letter_list.sort()
-
-print(number_list)
-print(sort_number_list)
-print(letter_list)
-print(sort_letter_list)
-
-# reverse
-number_list.reverse()
-
-print(number_list)
-print(sort_number_list)
-print(letter_list)
-print(sort_letter_list)
-
-
-print(changed_list)
-
-
-home_list = [123, 213.23, 'abc', True, 10+4j]
-print(home_list)
-new_home_list = home_list[1:3]
-print(new_home_list)
+# random deleted
+pop_element = set_text.pop()
+print(pop_element)
+# removing
+removing_element = set_text.remove('abc')
+print(removing_element)
+# discard
+set_text.discard('def')
+set_text.discard(1)
+print(set_text)
